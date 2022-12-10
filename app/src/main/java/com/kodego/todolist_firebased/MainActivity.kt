@@ -27,15 +27,16 @@ class MainActivity : AppCompatActivity() {
             binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(binding.root)
 
-            toDoListdb = ToDoDatabase.invoke(this)
+            //toDoListdb = ToDoDatabase.invoke(this)
 
             //display table data on screen
-            view()
+            // view()
 
             textView.setText(dateTime)
             textView.isEnabled = false
 
-            binding.btnAdd.setOnClickListener(){
+            binding.btnAdd.setOnClickListener() {
+/*
                 var worklist:String = binding.edtxtToDoWork.text.toString()
                 val workList = WorkList(worklist)
 
@@ -76,4 +77,8 @@ class MainActivity : AppCompatActivity() {
                     dialogBox.dismiss()
                 }
             }
+*/
+            }
         }
+    }
+}
