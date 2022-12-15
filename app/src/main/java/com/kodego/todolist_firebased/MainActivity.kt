@@ -39,7 +39,6 @@ class MainActivity : AppCompatActivity() {
        // binding.txtvwToDoList.text = ToDoList_Database().toDoListDatabase.toString()
 
             //display table data on screen
-            view()
 
             var textView: TextView = binding.edtxtDate
             textView.setText(dateTime)
@@ -47,13 +46,14 @@ class MainActivity : AppCompatActivity() {
 
             binding.btnAdd.setOnClickListener(){
                 var toDoList:String = binding.edtxtToDoWork.text.toString()
-                dao.add(toDoList)
+                var date:String = binding.edtxtDate.text.toString()
+                dao.add(toDoList,date)
 
                 val workList = ToDoList(toDoList, dateTime)
                 
                 adapter.toDoListModel.add(workList)
                 binding.edtxtToDoWork.text.clear()
-
+                view()
                 adapter.notifyDataSetChanged()
 
                 Toast.makeText(applicationContext,"ADDED!", Toast.LENGTH_LONG).show()

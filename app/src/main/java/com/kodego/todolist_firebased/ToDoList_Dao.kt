@@ -8,8 +8,8 @@ import com.google.firebase.ktx.Firebase
 class ToDoList_Dao {
     var dbReference: DatabaseReference = Firebase.database.reference
 
-    fun add(toDoList: String){
-        dbReference.push().setValue(toDoList)
+    fun add(toDoList: String, date: String){
+        dbReference.push().setValue(toDoList, date)
     }
 
     fun get(): Query {

@@ -30,7 +30,8 @@ class ToDoList_Adapter (var toDoListModel: MutableList<ToDoList>): RecyclerView.
     override fun onBindViewHolder(holder: ToDoListViewHolder, position: Int) {
         holder.binding.apply{
             txtvwToDoWork.text = toDoListModel[position].toDoList
-            txtvwDate.text = Date.from(Instant.now()).toString()
+         //   txtvwDate.text = Date.from(Instant.now()).toString()
+            txtvwDate.text = toDoListModel[position].date
 
             imgbtnDelete.setOnClickListener(){
                 onItemDelete?.invoke(toDoListModel[position],position)
