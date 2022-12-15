@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "546160184460",
+    "project_id": "todolist-firebased",
+    "storage_bucket": "todolist-firebased.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546160184460:android:6a70e25b89189bb318ffa9",
+        "android_client_info": {
+          "package_name": "com.kodego.todolist_firebased"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546160184460-vg79lrgoompb5epstbiu9f7s6eh37qbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeT_mHudpIU4OmKC-OYuF3-74k2k6_dzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546160184460-vg79lrgoompb5epstbiu9f7s6eh37qbo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
